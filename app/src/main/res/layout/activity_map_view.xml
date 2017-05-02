@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jwei.mysearch.Mapview"
+    tools:ignore="MergeRootFrame">
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/map_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true" />
+
+        <Button
+            android:layout_width="45dp"
+            android:layout_height="45sp"
+            android:id="@+id/mapview_button1"
+            android:layout_marginTop="10sp"
+            android:layout_marginLeft="10sp"
+            android:padding="3dp"
+            android:background="@drawable/shape"
+            android:drawableTop="@mipmap/location2"
+            android:text="坐标"
+            android:textSize="10sp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            />
+
+        <Button
+            android:layout_width="45dp"
+            android:layout_height="45sp"
+            android:id="@+id/mapview_button2"
+            android:layout_below="@+id/mapview_button1"
+            android:layout_marginTop="10sp"
+            android:layout_marginLeft="10sp"
+            android:padding="3dp"
+            android:background="@drawable/shape"
+            android:drawableTop="@mipmap/pic3"
+            android:text="显示图"
+            android:textSize="10sp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            />
+
+        <Button
+            android:layout_width="45sp"
+            android:layout_height="45sp"
+            android:id="@+id/mapview_navigation"
+            android:layout_below="@+id/mapview_button2"
+            android:layout_marginTop="10sp"
+            android:layout_marginLeft="10sp"
+            android:padding="3dp"
+            android:background="@drawable/shape"
+            android:drawableTop="@mipmap/navigation1"
+            android:text="导航"
+            android:textSize="10sp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            />
+
+
+
+</RelativeLayout>

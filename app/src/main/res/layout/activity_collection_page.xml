@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f9f4f4"
+    tools:context="com.jwei.mysearch.CollectionPage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45sp"
+        android:orientation="horizontal"
+        android:id="@+id/collection_title"
+        android:background="#21b2fa"
+        >
+        <Button
+            android:layout_width="50sp"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:id="@+id/collectionpage_back"
+            android:drawableLeft="@mipmap/left"
+            android:paddingLeft="15sp"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="收藏"
+            android:textSize="18sp"
+            android:textColor="#ffffff"
+            android:background="@android:color/transparent"
+            android:gravity="left|center"
+            />
+        <Button
+            android:layout_width="40sp"
+            android:layout_height="match_parent"
+            android:id="@+id/collection_search"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@mipmap/goodsearch"
+            />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50sp">
+
+        <android.support.design.widget.TabLayout
+        android:id="@+id/tab_FindFragment_title"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:layout_gravity="center"
+        android:background="#21b2fa"
+        app:tabIndicatorColor="#ffffff"
+        app:tabSelectedTextColor="#ffffff"
+        app:tabTextColor="#504b4b"
+        app:tabTextAppearance = "@style/tabLayoutTextSize"
+        ></android.support.design.widget.TabLayout>
+
+        <View
+            android:layout_width="0.2px"
+            android:layout_height="20sp"
+            android:layout_centerInParent="true"
+            android:background="#ffffff"
+            />
+    </RelativeLayout>
+    <!--app:tabIndicatorColor="@color/white"                 // 下方滚动的下划线颜色
+        app:tabSelectedTextColor="@color/gray"               // tab被选中后，文字的颜色
+        app:tabTextColor="@color/white"                      // tab默认的文字颜色
+     -->
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/collect_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>

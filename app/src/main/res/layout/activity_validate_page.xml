@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f5f4f4"
+    tools:context="com.jwei.mysearch.activity_validate_page">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45sp"
+        android:orientation="horizontal"
+        android:background="#21b2fa"
+        >
+        <Button
+            android:layout_width="50sp"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:id="@+id/validate_back"
+            android:drawableLeft="@mipmap/left"
+            android:paddingLeft="15sp"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            />
+        <TextView
+            android:layout_width="330sp"
+            android:layout_height="match_parent"
+            android:text="填写验证码"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:background="@android:color/transparent"
+            android:gravity="left|center"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="30sp"
+        android:paddingBottom="15sp"
+        >
+
+        <TextView
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="已发送验证码至:"
+            android:textColor="#312d2d"
+            android:textSize="16sp"
+            android:layout_marginLeft="20sp"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:layout_gravity="center"
+            android:text="+86 18059004179"
+            android:textColor="#9da4a7"
+            android:textSize="20sp"
+            android:layout_marginLeft="10sp"
+            android:id="@+id/validate_number"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="20sp"
+        android:paddingBottom="15sp"
+        >
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="验证码"
+            android:textColor="#312d2d"
+            android:textSize="16sp"
+            android:layout_marginLeft="20sp"
+            android:id="@+id/valicate"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:layout_gravity="center"
+            android:hint="请输入验证码"
+            android:textColorHint="#9da4a7"
+            android:textColor="#9da4a7"
+            android:textSize="16sp"
+            android:layout_marginLeft="10sp"
+            android:id="@+id/validate_decode"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.5px"
+        android:layout_marginLeft="15sp"
+        android:layout_marginRight="15sp"
+        android:background="#21b2fa"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/valicate_next"
+        android:layout_marginLeft="35sp"
+        android:layout_marginRight="35sp"
+        android:layout_marginTop="35sp"
+        android:background="@drawable/shape"
+        android:text="下一步"
+        android:textSize="17sp"/>
+
+</LinearLayout>

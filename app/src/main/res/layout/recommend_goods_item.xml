@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#ffffff">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="100sp"
+            android:layout_weight="1.0"
+            android:orientation="vertical"
+            android:paddingTop="5sp"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/recommend_name">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45sp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:id="@+id/recommend_goods_name"
+                    android:paddingRight="15sp"
+                    android:text="lalala"
+                    android:textColor="#000000"
+                    android:textSize="13sp"
+                    android:layout_marginBottom="5dp"
+                    />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.3px"
+                android:background="@android:color/darker_gray"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:layout_gravity="center"
+                    android:id="@+id/recommend_goods_price"
+                    android:text="lalala"
+                    android:textColor="#fa5113"
+                    android:textSize="18sp"
+                    />
+
+                <View
+                    android:layout_width="0.3px"
+                    android:layout_height="20sp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10sp"
+                    android:background="@android:color/darker_gray"
+                    />
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingRight="15sp"
+                    android:layout_gravity="center"
+                    android:id="@+id/store_name2"
+                    android:text="xixixi"
+                    android:textColor="#000000"
+                    android:textSize="13sp"
+                    />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="75sp"
+            android:layout_height="75sp"
+            android:layout_gravity="center"
+            android:layout_marginRight="10sp"
+            android:layout_marginLeft="10sp"
+            android:id="@+id/recommend_goods_imageview"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ic_launcher"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_alignParentBottom="true"
+        android:background="#f9f4f4"
+        />
+
+</LinearLayout>

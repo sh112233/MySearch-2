@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f9f4f4">
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:color="@android:color/transparent"
+       ></FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3px"
+        android:background="#d7cfcf"
+        />
+
+    <LinearLayout
+        android:id="@+id/tab_menu"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff">
+
+        <Button
+            android:id="@+id/txt_deal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingTop="3sp"
+            android:paddingBottom="3sp"
+            android:background="@android:color/transparent"
+            android:drawableTop="@drawable/tab_menu_search"
+            android:selectAllOnFocus="true"
+            android:text="搜索"
+            android:onClick="onClick"
+            android:textColor="@drawable/tab_menu_textcolor"
+            android:textSize="12sp"
+            android:gravity="center"
+            />
+
+        <Button
+            android:id="@+id/txt_user"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingTop="3sp"
+            android:paddingBottom="3sp"
+            android:background="@android:color/transparent"
+            android:drawableTop="@drawable/tab_menu_user"
+            android:selectAllOnFocus="true"
+            android:text="我的"
+            android:onClick="onClick"
+            android:textColor="@drawable/tab_menu_textcolor"
+            android:textSize="12sp"
+            android:gravity="center"
+            />
+    </LinearLayout>
+
+</LinearLayout>

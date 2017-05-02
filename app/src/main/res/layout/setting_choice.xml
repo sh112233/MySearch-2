@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:paddingTop="13sp"
+    android:paddingBottom="13sp"
+    >
+
+    <ImageView
+        android:layout_width="20sp"
+        android:layout_height="20sp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ic_launcher"
+        android:id="@+id/set_icon"
+        />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:text="设置"
+        android:textSize="16sp"
+        android:layout_marginLeft="10sp"
+        android:textColor="@android:color/black"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/set_choice"/>
+
+    <ImageView
+        android:layout_width="20sp"
+        android:layout_height="20sp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/to"
+        android:id="@+id/goto1"
+
+
+        />
+
+</LinearLayout>

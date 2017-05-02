@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_goods_list_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.jwei.mysearch.GoodsListPage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55sp"
+        android:background="#21b2fa"
+        android:id="@+id/goods_list_page_title"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="50sp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawableLeft="@mipmap/left"
+            android:paddingLeft="15sp"
+            android:background="@android:color/transparent"/>
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="35sp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_marginRight="30sp"
+            android:paddingLeft="10sp"
+            android:drawableLeft="@mipmap/searchpageicon"
+            android:background="@drawable/listview_bg1"
+            android:id="@+id/search"
+            android:hint="经纬小公举"
+            android:textColorHint="#807979"
+            android:textColor="#312d2d"
+            android:textSize="15sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45sp"
+        android:background="@android:color/transparent"
+        android:id="@+id/filter_condition"
+        android:layout_below="@+id/goods_list_page_title">
+        <Spinner
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:id="@+id/spinner_condition"
+            android:layout_marginLeft="10sp"
+            >
+        </Spinner>
+
+        <Button
+            android:layout_width="65sp"
+            android:layout_height="35sp"
+            android:layout_gravity="center"
+            android:paddingLeft="6sp"
+            android:paddingRight="6sp"
+            android:background="@android:color/transparent"
+            android:drawableRight="@mipmap/condition"
+            android:layout_marginRight="14sp"
+            android:text="筛选"
+            android:textColor="#000000"
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/filter_condition"
+        android:id="@+id/goods_list_line"
+        android:layout_marginBottom="1sp"
+        android:layout_gravity="center"
+        android:background="@android:color/darker_gray"
+        />
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/listview5"
+        android:layout_below="@+id/goods_list_line"
+        ></ListView>
+
+</RelativeLayout>

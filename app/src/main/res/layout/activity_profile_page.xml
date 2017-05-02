@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:id="@+id/activity_profile_page"
+    tools:context="com.jwei.mysearch.activity_profile_page">
+
+
+
+    <ImageView
+        android:id="@+id/profile_personal_icon_blur"
+        android:layout_width="match_parent"
+        android:layout_height="155sp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/example3"
+        />
+
+    <Button
+        android:layout_width="40sp"
+        android:layout_height="wrap_content"
+        android:id="@+id/profile_back"
+        android:drawableRight="@mipmap/left"
+        style="@style/Base.Widget.AppCompat.Button.Borderless"/>
+
+    <Button
+        android:layout_width="90sp"
+        android:layout_height="45sp"
+        android:gravity="center"
+        android:id="@+id/profile_edit"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="7sp"
+        android:drawableLeft="@mipmap/edit"
+        android:paddingLeft="22sp"
+        android:paddingRight="10sp"
+        android:paddingTop="12sp"
+        android:paddingBottom="12sp"
+        android:textSize="17sp"
+        style="@style/Base.Widget.AppCompat.Button.Borderless"
+        android:text="编辑" />
+
+    <ImageView
+        android:id="@+id/profile_personal_icon"
+        android:layout_width="150sp"
+        android:layout_height="150sp"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitXY"
+        android:padding="1.5dp"
+        android:background="@drawable/pic_border"
+        android:src="@mipmap/example3"
+        android:layout_marginLeft="35sp"
+        android:layout_marginTop="60sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/profile_user_name"
+        android:layout_below="@+id/profile_personal_icon"
+        android:layout_marginTop="12sp"
+        android:layout_marginLeft="10sp"
+        android:text="我是荔枝肉"
+        android:textColor="#665b5b"
+        android:textSize="17sp"
+        android:textStyle="bold"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/profile_list"
+        android:layout_below="@id/profile_user_name"
+        android:layout_marginTop="50sp"
+        android:paddingLeft="13sp"
+        android:paddingRight="13sp"
+        android:paddingBottom="10sp"
+        android:paddingTop="10sp"></ListView>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0.5px"
+        android:id="@+id/profile_divider"
+        android:layout_below="@id/profile_list"
+        android:layout_marginLeft="15sp"
+        android:layout_marginRight="15sp"
+        android:paddingLeft="15sp"
+        android:paddingRight="15sp"
+        android:background="@android:color/darker_gray"
+        />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/profile_list2"
+        android:layout_below="@id/profile_divider"
+        android:paddingLeft="13sp"
+        android:paddingRight="13sp"
+        android:paddingBottom="10sp"
+        android:paddingTop="10sp"></ListView>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0.5px"
+        android:id="@+id/profile_divider2"
+        android:layout_below="@id/profile_list2"
+        android:layout_gravity="center"
+        android:layout_marginLeft="15sp"
+        android:layout_marginRight="15sp"
+        android:paddingLeft="15sp"
+        android:paddingRight="15sp"
+        android:background="@android:color/darker_gray"
+        />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/profile_list3"
+        android:layout_below="@id/profile_divider2"
+        android:paddingLeft="13sp"
+        android:paddingRight="13sp"
+        android:paddingBottom="10sp"
+        android:paddingTop="10sp"></ListView>
+
+
+
+</RelativeLayout>

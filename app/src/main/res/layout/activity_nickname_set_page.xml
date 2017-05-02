@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f5f4f4"
+    tools:context="com.jwei.mysearch.activity_nickname_set_page">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45sp"
+        android:orientation="horizontal"
+        android:background="#21b2fa"
+        >
+        <Button
+            android:layout_width="50sp"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:id="@+id/nickname_back"
+            android:drawableLeft="@mipmap/left"
+            android:paddingLeft="15sp"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            />
+        <TextView
+            android:layout_width="330sp"
+            android:layout_height="match_parent"
+            android:text="昵称设置"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:background="@android:color/transparent"
+            android:gravity="left|center"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="40sp"
+        android:paddingBottom="15sp"
+        >
+
+        <TextView
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="昵称"
+            android:textColor="#312d2d"
+            android:textSize="16sp"
+            android:layout_marginLeft="20sp"
+            android:id="@+id/nickname"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:layout_gravity="center"
+            android:text="给自己起个昵称吧"
+            android:textColor="#9da4a7"
+            android:textSize="16sp"
+            android:layout_marginLeft="10sp"
+            android:id="@+id/nickname_set"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.5px"
+        android:layout_marginLeft="15sp"
+        android:layout_marginRight="15sp"
+        android:background="#21b2fa"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/nickname_done"
+        android:layout_marginLeft="75sp"
+        android:layout_marginRight="75sp"
+        android:layout_marginTop="30sp"
+        android:background="@drawable/shape"
+        android:text="完成"
+        android:textSize="17sp"/>
+
+</LinearLayout>

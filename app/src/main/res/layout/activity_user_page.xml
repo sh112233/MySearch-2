@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f4f4"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:id="@+id/activity_user_page">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150sp"
+        android:background="#21b2fa"
+        android:id="@+id/user_page_title"
+        >
+
+        <ImageView
+        android:layout_width="25sp"
+        android:layout_height="25sp"
+            android:id="@+id/to_settingpage"
+        android:layout_marginTop="10sp"
+        android:layout_marginLeft="10sp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/set" />
+
+
+        <ImageView
+            android:id="@+id/iv_personal_icon"
+            android:layout_width="75sp"
+            android:layout_height="75sp"
+            android:layout_alignParentLeft="true"
+            android:scaleType="fitXY"
+            android:src="@mipmap/personalicon"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="55sp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="120sp"
+            android:layout_marginLeft="5sp"
+            android:layout_toRightOf="@id/iv_personal_icon"
+            android:orientation="vertical"
+            android:layout_marginTop="55sp">
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="20sp"
+                android:text="我是荔枝肉"
+                android:textColor="@android:color/white"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="225sp"
+                android:layout_height="0.5px"
+                android:layout_gravity="center"
+                android:layout_marginTop="8sp"
+                android:layout_marginStart="0sp"
+                android:background="@android:color/white" />
+
+            <TextView
+                android:id="@+id/personal_resume"
+                android:layout_width="220sp"
+                android:layout_height="45sp"
+                android:layout_marginTop="8sp"
+                android:text="我是萌萌的小公举
+这是一个非常之吊的app"
+                android:textColor="@android:color/white"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        android:orientation="vertical"
+        android:background="#ffffff">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:paddingLeft="15sp"
+                android:text="我的收藏"
+                android:textColor="#413d3d"
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5px"
+            android:layout_gravity="center"
+            android:background="@android:color/darker_gray"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70sp">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:id="@+id/collect_goods"
+                android:background="@android:color/transparent"
+                android:padding="10sp"
+                android:drawableTop="@mipmap/goods"
+                android:text="商品"
+                android:textColor="#21b2fa"
+                android:textSize="13sp"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:id="@+id/collect_store"
+                android:background="@android:color/transparent"
+                android:padding="10sp"
+                android:drawableTop="@mipmap/store"
+                android:text="商店"
+                android:textColor="#21b2fa"
+                android:textSize="13sp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        android:id="@+id/user_page_choice"
+        android:background="#ffffff"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="0.3dp"
+        android:paddingLeft="13sp"
+        android:paddingRight="13sp"
+        android:paddingBottom="5sp"
+        android:paddingTop="5sp">
+    </ListView>
+</LinearLayout>

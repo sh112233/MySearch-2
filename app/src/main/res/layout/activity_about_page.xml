@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f5f4f4"
+    tools:context="com.jwei.mysearch.activity_about_page">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300sp"
+        android:background="#ffffff"
+        >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/about_back"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@mipmap/back"
+            android:layout_marginLeft="15sp"/>
+
+        <ImageView
+            android:layout_width="125sp"
+            android:layout_height="125sp"
+            android:layout_centerInParent="true"
+            android:id="@+id/about_icon"
+            android:layout_marginBottom="10sp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/icon"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/about_icon"
+            android:id="@+id/version"
+            android:layout_centerInParent="true"
+            android:text="V 1.0.0"
+            android:textSize="15sp"
+            android:textColor="#807979"
+            />
+    </RelativeLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        android:id="@+id/about_choice"
+        android:background="#ffffff"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="0.3dp"
+        android:paddingLeft="13sp"
+        android:paddingRight="13sp"
+        android:paddingBottom="5sp"
+        android:paddingTop="5sp">
+    </ListView>
+
+
+
+</LinearLayout>

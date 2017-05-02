@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+            android:background="#efd3d3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#ffffff">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="5sp"
+            android:orientation="vertical"
+            android:background="@android:color/transparent">
+
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:orientation="horizontal"
+                android:background="@android:color/transparent"
+                >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingLeft="20sp"
+                    android:background="@android:color/transparent"
+                    android:drawableLeft="@mipmap/startpoint"
+                    />
+
+                <EditText
+                    android:id="@+id/start"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:background="@android:color/transparent"
+                    android:layout_gravity="center"
+                    android:ems="10"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="15sp">
+                    <requestFocus />
+                </EditText>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.3px"
+                android:layout_marginLeft="48sp"
+                android:background="@android:color/darker_gray"
+                />
+
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingLeft="20sp"
+                    android:drawableLeft="@mipmap/terminal" />
+
+                <EditText
+                    android:id="@+id/end"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5sp"
+                    android:background="@android:color/transparent"
+                    android:ems="10"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="15sp">
+                    <requestFocus />
+                </EditText>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="50sp"
+            android:layout_height="match_parent"
+            android:drawableLeft="@mipmap/transport2"
+            android:background="@android:color/transparent"
+            android:paddingLeft="5sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:layout_marginBottom="10sp"
+        android:layout_marginTop="10sp"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"
+        android:orientation="horizontal"
+        android:background="@drawable/listview_bg1">
+
+        <Button
+            android:id="@+id/drive"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:padding="3sp"
+            android:onClick="searchButtonProcess"
+            android:background="#ffffff"
+            android:drawableTop="@mipmap/car"
+            android:text="驾车"
+            android:textColor="#21b2fa"
+            android:textSize="12sp"/>
+
+        <Button
+            android:id="@+id/transit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:padding="3sp"
+            android:onClick="searchButtonProcess"
+            android:background="#ffffff"
+            android:drawableTop="@mipmap/bus"
+            android:text="公交"
+            android:textColor="#21b2fa"
+            android:textSize="12sp"/>
+
+        <Button
+            android:id="@+id/walk"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:padding="3sp"
+            android:onClick="searchButtonProcess"
+            android:background="#ffffff"
+            android:drawableTop="@mipmap/walk"
+            android:text="步行"
+            android:textColor="#21b2fa"
+            android:textSize="12sp"/>
+
+        <Button
+            android:id="@+id/bike"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:padding="3sp"
+            android:onClick="searchButtonProcess"
+            android:background="#ffffff"
+            android:drawableTop="@mipmap/bike"
+            android:text="骑行"
+            android:textColor="#21b2fa"
+            android:textSize="12sp"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.baidu.mapapi.map.MapView
+            android:id="@+id/map"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:clickable="true" />
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignWithParentIfMissing="false"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dip"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/customicon"
+                android:layout_width="45sp"
+                android:layout_height="45sp"
+                android:layout_marginTop="10dip"
+                android:layout_weight="1.0"
+                android:padding="3dp"
+                android:layout_marginBottom="10sp"
+                android:layout_gravity="center"
+                android:onClick="changeRouteIcon"
+                android:background="@drawable/shape"
+                android:drawableTop="@mipmap/custom1"
+                android:text="自定义"
+                android:textSize="10sp"/>
+
+            <Button
+                android:id="@+id/pre"
+                android:layout_width="45sp"
+                android:layout_height="45sp"
+                android:layout_weight="1.0"
+                android:layout_marginBottom="10sp"
+                android:layout_gravity="center"
+                android:padding="5sp"
+                android:drawableTop="@mipmap/left2"
+                android:background="@drawable/shape"
+                android:onClick="nodeClick" />
+
+            <Button
+                android:id="@+id/next"
+                android:layout_width="45sp"
+                android:layout_height="45sp"
+                android:layout_weight="1.0"
+                android:layout_gravity="center"
+                android:padding="5sp"
+                android:drawableTop="@mipmap/right"
+                android:background="@drawable/shape"
+                android:onClick="nodeClick" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
